@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo6-config
+  namespace: demo6
+data:
+  DB_HOST: "mysql"
+  DB_PORT: "3306"
+  DB_USER: "root"
+  DB_PASSWORD: "demo6_dev_password"
+  DB_NAME: "demo6_db"
+  REDIS_HOST: "redis"
+  REDIS_PORT: "6379"
+  REDIS_PASSWORD: "demo6_redis_pwd"
+  REDIS_DB: "0"
+  SECRET_KEY: "dev-secret-key-for-k8s"
+  APP_ENV: "development"
+  DEFAULT_MODEL: "deepseek"
+  ACCESS_PASSWORD_ENABLED: "false"
+  IP_WHITELIST_ENABLED: "false"
+  LOG_FORMAT: "json"
+  BACKEND_CORS_ORIGINS: '["http://localhost","http://10.0.0.2"]'
